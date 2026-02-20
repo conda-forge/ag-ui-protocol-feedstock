@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core
+    - uv-build >=0.8.0,<0.9
     - pip
   run:
     - python >={{ python_min }}
-    - pydantic >=2.11.2,<3.0.0
+    - pydantic >=2.11.2
 
 test:
   imports:
