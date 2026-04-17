@@ -1,5 +1,5 @@
 {% set name = "ag-ui-protocol" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ag_ui_protocol-{{ version }}.tar.gz
-  sha256: 5e23c1042c7d4e364d685e68d2fb74d37c16bc83c66d270102d8eaedce56ad82
+  sha256: b5f45c98ed52291c7a07d01eb91f44d5e73a2fae8c31e8fc2a48d749a4dec5b7
 
 build:
   noarch: python
