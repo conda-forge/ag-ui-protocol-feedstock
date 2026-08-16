@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `ag-ui-protocol` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install ag-ui-protocol
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install ag-ui-protocol
 ```
 
-It is possible to list all of the versions of `ag-ui-protocol` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add ag-ui-protocol
+# for installing globally
+pixi global install ag-ui-protocol
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `ag-ui-protocol` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search ag-ui-protocol --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search ag-ui-protocol --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search ag-ui-protocol --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds ag-ui-protocol --channel conda-forge
 # List dependencies of `ag-ui-protocol`:
 mamba repoquery depends ag-ui-protocol --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
